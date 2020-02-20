@@ -36,4 +36,17 @@ li.dev-item header img {
 
 li.dev-item header .user-info {
   margin-left: 10px;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+li.dev-item header .name-trash {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.glyphicon-trash {
+  font-size: 20px;
 }

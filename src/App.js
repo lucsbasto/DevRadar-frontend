@@ -13,7 +13,6 @@ function App() {
   async function handleAddDev(data){
     const response = await api.post('/devs', data)
     setDevs([...devs, response.data]);
-    
   }
  
   //buscar usuários cadastrados no banco de dados
@@ -25,7 +24,7 @@ function App() {
       }
     loadDevs();
   }, []);
-
+  
   return (
     <div id="app">
       {/* aside é o side bar */}
