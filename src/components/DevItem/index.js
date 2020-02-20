@@ -1,16 +1,10 @@
 import React from 'react';
 import './styles.css'
-import api from '../../service/api';
 
-function DevItem ({dev}){
+function DevItem ({dev, onClick}){
   function handleDev(e){
     e.preventDefault();
-    async function deleteDev(){
-      const response = await api.delete(`/devs/${dev.github_username}`);
-      console.log("res", response)
-    }
-
-    deleteDev()
+    onClick({username: dev.github_username});
   }
   return (
     //esse key precisa ser um dado unico entre os dados
@@ -23,7 +17,7 @@ function DevItem ({dev}){
             <strong>
              {dev.name}
             </strong>
-            <button onClick={handleDev}><i class="glyphicon glyphicon-trash"></i></button>
+            <button onClick={handleDev}><i className="glyphicon glyphicon-trash"></i></button>
           </div>
           <span>{dev.techs.join(', ')}</span>
         </div>

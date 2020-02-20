@@ -14,17 +14,20 @@ function App() {
     const response = await api.post('/devs', data)
     setDevs([...devs, response.data]);
   }
+  async function loadDevs(){
+    const response = await api.get('/devs');
+    setDevs(response.data.devs);
+  }
+  async function handleRemoveDev({username}){
+    await api.delete(`/devs/${username}`)
+    loadDevs();
+  }
  
   //buscar usuários cadastrados no banco de dados
   useEffect(()=>{
-    async function loadDevs(){
-        const response = await api.get('/devs');
-        
-        setDevs(response.data.devs);
-      }
     loadDevs();
   }, []);
-  
+
   return (
     <div id="app">
       {/* aside é o side bar */}
@@ -36,7 +39,7 @@ function App() {
       <main>
         <ul>
           {devs.map(dev =>(
-            <Dev key={dev._id} dev={dev}/>
+            <Dev key={dev._id} dev={dev} onClick={handleRemoveDev}/>
           ))}
         </ul>
       </main>
