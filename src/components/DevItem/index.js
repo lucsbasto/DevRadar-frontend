@@ -4,6 +4,8 @@ import './styles.css'
 function DevItem ({dev, onClick}){
   function handleDev(e){
     e.preventDefault();
+    //onClick passado por parametro é um two-way data binding
+    //ele envia a função que vai ser chamada e retorna a função com o parametro
     onClick({username: dev.github_username});
   }
   return (
