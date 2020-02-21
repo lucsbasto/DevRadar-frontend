@@ -13,7 +13,7 @@ function DevItem ({dev, onClick}){
     //pro react parar de dar warning
     <li key={dev._id} className="dev-item">
       <header>
-        <img src={dev.avatar_url} alt='robson'/>
+        <img src={dev.avatar_url} alt={dev.github}/>
         <div className="user-info">
           <div className="name-trash">
             <strong>
