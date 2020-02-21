@@ -27,7 +27,7 @@ function DevItem ({dev, onClick}){
       <p>
       {dev.bio}
       </p>
-      <a href= {`https://github.com/${dev.github_username}`} target="_blank">Acessar Perfil no Github</a>
+      <a href= {`https://github.com/${dev.github_username}`} target="_blank" rel="noopener noreferrer">Acessar Perfil no Github</a>
     </li>   
   );
 }
