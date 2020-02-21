@@ -7,4 +7,5 @@ In the project directory, you can run:
 
 Run `yarn start` to open the app in the development mode. Access [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Use the link bellow to see online [https://find-devs.herokuapp.com/](https://find-devs.herokuapp.com/) too.
+Use the link bellow to see online too.
+[https://find-devs.herokuapp.com/](https://find-devs.herokuapp.com/)
