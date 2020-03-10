@@ -1,4 +1,4 @@
-Project frontend consuming a backend API available to download in [https://github.com/lucsbasto/DevRadar-backend](https://github.com/lucsbasto/DevRadar-backend) or to use the API online available in  [https://find-devs-backend.herokuapp.com/](https://find-devs-backend.herokuapp.com/)
+Project frontend consuming a backend API available to download in [https://github.com/lucsbasto/DevRadar-backend](https://github.com/lucsbasto/DevRadar-backend) or to use the API online available in  [https://find-devs-backend.herokuapp.com/](https://find-devs-backend.herokuapp.com/) and [https://find-dev.netlify.com/](https://find-dev.netlify.com/)
 
 ## Available Scripts
 In the project directory, you can run:
